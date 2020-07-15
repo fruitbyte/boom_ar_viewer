@@ -1,0 +1,19 @@
+html, body {
+    height: 100%
+}
+
+#content {
+    height: 100%;
+    width: auto;
+}
+
+
+model-viewer:focus {
+    outline: none;
+  }
+
+model-viewer {
+    width: auto;
+    height: inherit;
+}
+
