@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Boom AR Viewer</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+
     <!-- Loads <model-viewer> for modern browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
     <!-- Loads <model-viewer> for old browsers like IE11: -->
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="content">
-        <model-viewer ar camera-controls ios-src="models/charlieConceptBrushedAlumn.usdz" src="models/charlieConceptBrushedAlumn.glb" alt="3D model of Team Alpha aircraft">
-            <button slot="ar-button" style="background-color: lightgreen; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-                View in AR
-            </button>
-        </model-viewer>
+    <div id="parent1">
+        <div id="text1">
+            <h1>Bravo vs Charlie</h1>
+            <h2>Two UAV concepts, aiming to break the world record for the fastest RC air breathing aircraft.</h2>
+        </div>
+        <div id="scene1">
+            <model-viewer ar camera-controls ios-src="models/bravoVCharlie.usdz" src="models/bravoVCharlie.glb" alt="Side by side comparison of Bravo and Charlie">
+                <button slot="ar-button" style="background-color: lightgreen; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                    View in AR
+                </button>
+            </model-viewer>
+        </div>
+    </div>
+
+    <div id="parent2">
+        <div id="text2">
+            <h1>Bravo</h1>
+            <h2>A blended body, mid-wing concept.</h2>
+        </div>
+        <div id="scene2">
+            <model-viewer ar camera-controls ios-src="models/bravoX1_3.usdz" src="models/bravoX1_3.glb" alt="Bravo Aircraft">
+                <button slot="ar-button" style="background-color: lightgreen; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                    View in AR
+                </button>
+            </model-viewer>
+        </div>
+    </div>
+    
+    <div id="parent3">
+        <div id="text3">
+            <h1>Charlie</h1>
+            <h2>A cylindrical fuselage high-wing concept.</h2>
+        </div>
+        <div id="scene3">
+            <model-viewer ar camera-controls ios-src="models/Charlie_Bid_Draft_2.usdz" src="models/Charlie_Bid_Draft_2.glb" alt="Charlie Aircraft">
+                <button slot="ar-button" style="background-color: lightgreen; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                    View in AR
+                </button>
+            </model-viewer>
+        </div>
     </div>
 </body>
 </html> 
