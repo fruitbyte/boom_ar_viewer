@@ -14,11 +14,6 @@ html, body {
     float: right;
 }
 
-#scene3 {
-    height: 100%;   
-    width: 66%;
-    float: right;
-}
 
 model-viewer:focus {
     outline: none;
@@ -53,36 +48,24 @@ h2 {
     margin-left: 10pt;
 }
 
-#text3 {
-    width: 33%;
-    height: auto;
-    float: left;
-    margin-left: 10pt;
-}
-
 #parent1 {
-    height: 33%;
+    height: 50%;
     width: auto;
 }
 
 #parent2 {
-    height: 33%;
+    height: 50%;
     width: auto;
 }
 
-#parent3 {
-    height: 33%;
-    width: auto;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     #text1 {
         width: 90%;
         height: auto;
     }
     
     #scene1 {
-        height: 33%;
+        height: 50%;
         width: 100%;
     }
 
@@ -92,17 +75,8 @@ h2 {
     }
     
     #scene2 {
-        height: 33%;
+        height: 50%;
         width: 100%;
     }
 
-    #text3 {
-        width: 100%;
-        height: auto;
-    }
-    
-    #scene3 {
-        height: 33%;
-        width: 100%;
-    }
 }
