@@ -34,16 +34,13 @@ h2 {
 
 #text1 {
     width: 100%;
-    height: 20%;
-    text-align: center;
+    height: auto;
     margin-bottom: 5pt;
-
 }
 
 #text2 {
     width: 100%;
-    height: 20%;
-    text-align: center;
+    height: auto;
     margin-bottom: 5pt;
 }
 
@@ -55,4 +52,16 @@ h2 {
 #parent2 {
     height: 50%;
     width: 100%;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    #parent1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #parent2 {
+        height: 100%;
+        width: 100%;
+    }
 }
